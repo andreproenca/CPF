@@ -1,7 +1,6 @@
 #  CPF (Brazilian document for civilian)
 
-documentNumber = input(
-    'Type your CPF document (Only numbers): ')
+documentNumber = input('Type your CPF document (Only numbers): ')
 
 newCPF = documentNumber[:-2]
 reverse = 10
@@ -12,7 +11,6 @@ for index in range(19):
         index -= 9
 
     total += int(newCPF[index]) * reverse
-    #print(int(newCPF[index]), index, reverse)
 
     reverse -= 1
     if reverse < 2:
